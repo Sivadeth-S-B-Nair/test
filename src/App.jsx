@@ -5,8 +5,11 @@ import "./App.css";
 
 function App() {
   const [count, setCount] = useState(0);
+  const [color3, setColor3] = useState("white");
+  function handleBlue() {
+    setColor3("blue");
+  }
   const [color1, setColor1] = useState("white");
-
   function handleRed() {
     setColor1("red");
   }
@@ -27,6 +30,12 @@ function App() {
           count is {count}
         </button>
         <button
+          onClick={handleBlue}
+          style={{ backgroundColor: color3, color: "black" }}
+        >
+          Blue
+</button>
+<button
           onClick={handleRed}
           style={{ backgroundColor: color1, color: "black" }}
         >
