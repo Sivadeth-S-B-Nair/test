@@ -10,6 +10,19 @@ function App() {
   function handleGreen() {
     setColor2("green");
   }
+  const [color3, setColor3] = useState("white");
+  function handleBlue() {
+    setColor3("blue");
+  }
+  const [color1, setColor1] = useState("white");
+  function handleRed() {
+    setColor1("red");
+  }
+
+  const [color4, setColor4] = useState("white");
+  function handleYellow() {
+    setColor1("yellow");
+  }
 
   return (
     <>
@@ -32,6 +45,26 @@ function App() {
         >
           Green
         </button>
+<button
+          onClick={handleBlue}
+          style={{ backgroundColor: color3, color: "black" }}
+        >
+          Blue
+        </button>
+        <button
+          onClick={handleRed}
+          style={{ backgroundColor: color1, color: "black" }}
+        >
+          Red
+        </button>
+
+        <button
+          onClick={handleYellow}
+          style={{ backgroundColor: color4, color: "black" }}
+        >
+          Yellow
+        </button>
+
         <p>
           Edit <code>src/App.jsx</code> and save to test HMR
         </p>
