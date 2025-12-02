@@ -16,7 +16,7 @@ function App() {
 
   const [color4, setColor4] = useState("white");
   function handleYellow() {
-    setColor1("yellow");
+    setColor4("yellow");
   }
 
   return (
